@@ -18,6 +18,10 @@ a:hover {
   color: #fff;
 }
 
+.hero {
+  margin-top: 0px !important;
+}
+
 .navbar {
   background-color: #fff;
 }
@@ -25,7 +29,35 @@ a:hover {
 .section,
 .text-section {
   padding: 60px 0;
-  margin: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.projects {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.projects .test {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 120px 0;
+  background-color: rgba(143, 219, 255, 0.5);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .projects .test {
+    margin: 5px 0;
+    padding: 120px 0;
+  background-color: rgba(143, 219, 255, 0.5);
+  color: white;
+  }
 }
 
 .text-section p {
@@ -38,7 +70,7 @@ a:hover {
   color: white;
 }
 
-.primary:hover {
+.primary:hover, .projects .col:hover {
   background-color: rgb(143, 219, 255, 0.6);
   transition: all 200ms ease-in-out;
 }
@@ -72,9 +104,23 @@ footer a:hover,
   transition: 80ms ease-in-out;
 }
 
+.navbar-brand {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
 /*Work page*/
 
 .course-logo {
   padding: 20px 0px;
   max-height: 80px;
+}
+
+.tech {
+  max-height: 80px;
+}
+
+/*Contact page*/
+.contact a {
+  color: red !important;
 }
