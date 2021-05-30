@@ -10,8 +10,8 @@
         content="Amy is a front-end developer based in London, UK. You can check out her projects here and get in touch with any enquiries.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/e061d0a226.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
@@ -19,43 +19,41 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="background-color:#f4f6f6;">
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Amy</a>
+            <a class="navbar-brand" href="/" title="Amy's Portfolio">Amy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/about.html">About</a>
+                        <a class="nav-link" href="/about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/work.html">Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contact</a>
+                        <a class="nav-link active" aria-current="page" href="/contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="text-section hero secondary">
+    <div class="text-section hero secondary contact">
         <h1>Contact</h1>
         <h2 class="mt-4">Get in touch with Amy</h2>
-        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non velit ut neque congue laoreet
-            efficitur a dolor.
-            In bibendum dolor et vehicula vehicula. Proin in erat id massa finibus vehicula eu vitae ligula.</p>
-    <div class="row contact mt-5">
-        <div class="col"><a href="mailto:amylouisesteel@hotmail.co.uk">Email Amy ></a></div>
-        <div class="col"><a href="#">Connect with Amy on Linkedin ></a></div>
+        <p class="mt-3">Please use the buttons below to contact me via email or to connect on LinkedIn.</p>
+    <div class="row mt-5">
+        <div><a class="btn btn-highlight" role="button" href="mailto:amylouisesteel@hotmail.co.uk" target="_blank" title="Contact Amy via email">Email Amy ></a></div>
+        <div class="mt-3"><a class="btn btn-highlight" role="button" href="https://www.linkedin.com/in/amy-steel-654609113/" target="_blank" title="Connect with Amy on Linkedin">Connect with Amy on Linkedin ></a></div>
     </div>
         </div>
 

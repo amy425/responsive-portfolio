@@ -1,7 +1,12 @@
 body {
   text-align: center;
-  color: #292929;
-  margin-bottom: 75px;
+  color: #1c2938;
+  margin-bottom: 70px;
+  font-family: 'Noto Sans';
+}
+
+body .trial {
+  background-color: #cd3f3e !important;
 }
 
 h1 {
@@ -11,7 +16,9 @@ h1 {
 a {
   color: #fff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1rem;
+  font-weight: bolder;
+  line-height: 1.5;
 }
 
 a:hover {
@@ -22,15 +29,22 @@ a:hover {
   margin-top: 0px !important;
 }
 
+.hero p {
+  max-width: 600px !important;
+}
+
 .navbar {
   background-color: #fff;
 }
 
 .section,
 .text-section {
-  padding: 60px 0;
+  padding: 60px 40px;
   margin-top: 10px;
-  margin-bottom: 10px;
+}
+
+.text-section p {
+  margin: 0 auto;
 }
 
 .projects {
@@ -42,8 +56,6 @@ a:hover {
   margin-left: 5px;
   margin-right: 5px;
   padding: 120px 0;
-  background-color: rgba(143, 219, 255, 0.5);
-  color: white;
 }
 
 @media (max-width: 768px) {
@@ -51,18 +63,6 @@ a:hover {
     margin-left: 0px;
     margin-right: 0px;
   }
-
-  .projects .test {
-    margin: 5px 0;
-    padding: 120px 0;
-  background-color: rgba(143, 219, 255, 0.5);
-  color: white;
-  }
-}
-
-.text-section p {
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 .primary {
@@ -71,23 +71,44 @@ a:hover {
 }
 
 .primary:hover, .projects .col:hover {
-  background-color: rgb(143, 219, 255, 0.6);
+  opacity: 1;
   transition: all 200ms ease-in-out;
 }
 
 .secondary {
-  background-color: rgba(245, 245, 245, 0.5);
-  color: #292929;
+  background-color:#f4f6f6;
+  opacity: 0.8;
+  color: #1c2938;
+}
+
+.secondary a {
+  color: #1c2938;
+}
+
+.secondary .icon-link {
+  color: #1c2938 !important;
 }
 
 .secondary:hover {
-  background-color: rgb(245, 245, 245);
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+
+.highlight {
+  background-color:#1c2938;
+  opacity: 0.9;
+  color: #fff;
+}
+
+.highlight:hover {
+  opacity: 1;
   transition: all 200ms ease-in-out;
 }
 
 footer {
-  background-color: #292929;
+  background-color: #1c2938;
   padding: 0 0 2px;
+  margin-top: 10px;
 }
 
 .icon-link {
@@ -120,7 +141,41 @@ footer a:hover,
   max-height: 80px;
 }
 
-/*Contact page*/
-.contact a {
-  color: red !important;
+/*Home page*/
+
+.about {
+  background-color: #ff9c91;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.work {
+  background-color: #cd3f3e;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.work:hover {
+  opacity: 1;
+}
+
+.about:hover {
+  opacity: 1;
+}
+
+.contact {
+  opacity: 1;
+}
+
+.btn-highlight {
+  border: solid 2px #ff9c91;
+  border-radius: 40px;
+  color: #ff9c91 !important;
+  padding: 15px 25px;
+}
+
+.btn-highlight:hover {
+  background-color: #ff9c91;
+  color: #fff !important;
+  transition: 80ms ease-in-out;
 }
